@@ -1,0 +1,107 @@
+/* Styling umum untuk halaman */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #8fb7df;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.todo-app {
+    background-color: #dfd5d5;
+    padding: 50px;
+    border-radius: 100px;
+    box-shadow: 0 4px 8px rgba(23, 10, 10, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    margin: 5;
+    font-size: 25px;
+    color: #090909;
+    text-align: center;
+
+}
+
+/* Input container styling */
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+#todo-input {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #000000;
+    border-radius: 100px;
+}
+
+button {
+    padding: 20px;
+    background-color: #131703f1;
+    color: rgb(243, 243, 243);
+    border: rgb(43, 43, 43);
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #17482b;
+}
+
+/* List styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+    color: #fafaf8;
+    font-style: initial;
+}
+
+li {
+    background-color: #7c26d9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li span {
+    flex: 1;
+    text-align: left;
+}
+
+/* Tombol hapus */
+.delete-btn {
+    background-color: #e8220c;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Tombol edit */
+.edit-btn {
+    background-color: #f39c12;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.edit-btn:hover {
+    background-color: #e67e22;
+}

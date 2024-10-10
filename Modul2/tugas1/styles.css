@@ -1,0 +1,97 @@
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e3e1f9; /* Background sesuai gambar */
+    margin: 0;
+  }
+  
+  .calculator {
+    width: 320px;
+    background-color: #2b2844;
+    border-radius: 20px;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    position: relative;
+  }
+  
+  .display {
+    background-color: #1a1735;
+    padding: 20px;
+    text-align: right;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .display input {
+    width: 100%;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 48px;
+    text-align: right;
+    outline: none;
+    caret-color: transparent;
+  }
+  
+  /* Button grid layout */
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+  
+  /* General button styles */
+  button {
+    background-color: #308c6a;
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #575381;
+  }
+  
+  button:active {
+    background-color: #3c3756;
+  }
+  
+  /* Operator buttons */
+  button.operator {
+    background-color: #7b5dde;
+  }
+  
+  button.operator:hover {
+    background-color: #9d7af2;
+  }
+  
+  button.operator:active {
+    background-color: #6848b0;
+  }
+  
+  /* AC button */
+  button.ac {
+    background-color: #ff5b67;
+  }
+  
+  button.ac:hover {
+    background-color: #ff767e;
+  }
+  
+  button.ac:active {
+    background-color: #e14a55;
+  }
+  
+  /* Special button for zero */
+  button.zero {
+    grid-column: span 2; /* Membuat tombol "0" dua kolom */
+  }
+  
