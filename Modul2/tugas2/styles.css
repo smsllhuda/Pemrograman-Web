@@ -14,8 +14,9 @@ body {
     padding: 50px;
     border-radius: 100px;
     box-shadow: 0 4px 8px rgba(23, 10, 10, 0.1);
-    width: 300px;
+    width: 300px; /* Lebar default untuk desktop */
     text-align: center;
+    transition: width 0.3s ease-in-out; /* Transisi lebar saat responsif */
 }
 
 h1 {
@@ -23,7 +24,6 @@ h1 {
     font-size: 25px;
     color: #090909;
     text-align: center;
-
 }
 
 /* Input container styling */
@@ -41,6 +41,7 @@ h1 {
     border-radius: 100px;
 }
 
+/* Button styling */
 button {
     padding: 20px;
     background-color: #131703f1;
@@ -104,4 +105,56 @@ li span {
 
 .edit-btn:hover {
     background-color: #e67e22;
+}
+
+/* ----------- Media Queries for Responsive Design ----------- */
+
+/* Tablet: Lebar 600px ke bawah */
+@media (max-width: 600px) {
+    .todo-app {
+        width: 90%; /* Lebar di layar tablet */
+        padding: 30px; /* Mengurangi padding untuk tablet */
+    }
+
+    h1 {
+        font-size: 22px; /* Mengurangi ukuran font judul */
+    }
+
+    #todo-input {
+        font-size: 14px; /* Mengurangi ukuran font input */
+    }
+
+    button {
+        padding: 15px; /* Mengurangi padding tombol */
+        font-size: 14px; /* Mengurangi ukuran font tombol */
+    }
+
+    li {
+        padding: 8px; /* Mengurangi padding pada item list */
+    }
+}
+
+/* Smartphone: Lebar 400px ke bawah */
+@media (max-width: 400px) {
+    .todo-app {
+        width: 100%; /* Lebar penuh untuk smartphone */
+        padding: 20px; /* Padding lebih sedikit */
+    }
+
+    h1 {
+        font-size: 20px; /* Ukuran font lebih kecil di ponsel */
+    }
+
+    #todo-input {
+        font-size: 12px; /* Ukuran font input lebih kecil */
+    }
+
+    button {
+        padding: 10px; /* Padding tombol lebih kecil */
+        font-size: 12px; /* Ukuran font tombol lebih kecil */
+    }
+
+    li {
+        padding: 6px; /* Padding lebih kecil untuk item list */
+    }
 }

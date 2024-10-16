@@ -4,7 +4,7 @@ function addTodo() {
     const taskText = input.value.trim(); // Mengambil nilai dari input dan menghilangkan spasi kosong
 
     if (taskText === '') {
-        alert('Please enter a task!'); // Jika input kosong, beri peringatan
+        alert('Masukin text woii'); // Jika input kosong, beri peringatan
         return;
     }
 
@@ -43,7 +43,7 @@ function addTodo() {
 
 // Fungsi untuk mengedit tugas
 function editTask(listItem, taskSpan) {
-    const newTask = prompt('Edit your task:', taskSpan.textContent); // Tampilkan prompt untuk mengedit tugas
+    const newTask = prompt('Edit Tulisan Kamu:', taskSpan.textContent); // Tampilkan prompt untuk mengedit tugas
 
     if (newTask && newTask.trim() !== '') {
         taskSpan.textContent = newTask.trim(); // Update teks tugas dengan yang baru
