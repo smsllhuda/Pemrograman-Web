@@ -1,35 +1,35 @@
 // Fungsi untuk menambah tugas
 function addTodo() {
     const input = document.getElementById('todo-input');
-    const taskText = input.value.trim(); // Mengambil nilai dari input dan menghilangkan spasi kosong
+    const taskText = input.value.trim();
 
     if (taskText === '') {
-        alert('Masukin text woii'); // Jika input kosong, beri peringatan
+        alert('Masukin text woii'); 
         return;
     }
 
     const todoList = document.getElementById('todo-list');
 
-    // Membuat elemen <li> baru untuk tugas
+    
     const listItem = document.createElement('li');
 
-    // Membuat elemen <span> untuk teks tugas
+    
     const taskSpan = document.createElement('span');
     taskSpan.textContent = taskText;
 
-    // Tombol edit untuk mengedit tugas
+
     const editBtn = document.createElement('button');
     editBtn.textContent = 'Edit';
     editBtn.classList.add('edit-btn');
     editBtn.onclick = () => editTask(listItem, taskSpan);
 
-    // Tombol hapus untuk menghapus tugas
+
     const deleteBtn = document.createElement('button');
     deleteBtn.textContent = 'Delete';
     deleteBtn.classList.add('delete-btn');
     deleteBtn.onclick = () => todoList.removeChild(listItem); // Fungsi untuk menghapus elemen <li>
 
-    // Menambahkan teks dan tombol ke dalam <li>
+ 
     listItem.appendChild(taskSpan);
     listItem.appendChild(editBtn);
     listItem.appendChild(deleteBtn);
