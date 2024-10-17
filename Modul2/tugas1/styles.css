@@ -42,12 +42,12 @@
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
+    grid-gap: 20px;
 }
 
 /* General button styles */
 button {
-    background-color: #308c6a;
+    background-color: #df0aa9;
     color: white;
     font-size: 24px;
     border: none;
@@ -68,7 +68,7 @@ button:active {
 
 /* Operator buttons */
 button.operator {
-    background-color: #7b5dde;
+    background-color: #653ee4;
 }
 
 button.operator:hover {
@@ -81,7 +81,7 @@ button.operator:active {
 
 /* AC button */
 button.ac {
-    background-color: #ff5b67;
+    background-color: #a908de;
 }
 
 button.ac:hover {
