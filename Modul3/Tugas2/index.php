@@ -2,19 +2,19 @@
 function cetakBilangan($n) {
     for ($i = 1; $i <= $n; $i++) {
         if ($i % 4 == 0 && $i % 6 == 0) {
-            echo "Pemrograman Website 2024\n";
+            echo "Pemrograman Website 2024<br>";
         } elseif ($i % 5 == 0) {
-            echo "2024\n";
+            echo "2024<br>";
         } elseif ($i % 4 == 0) {
-            echo "Pemrograman\n";
+            echo "Pemrograman<br>";
         } elseif ($i % 6 == 0) {
-            echo "Website\n";
+            echo "Website<br>";
         } else {
-            echo "$i\n";
+            echo "$i<br>";
         }
     }
 }
 
 // Contoh pemanggilan fungsi
-cetakBilangan(30);
+cetakBilangan(24);
 ?>
