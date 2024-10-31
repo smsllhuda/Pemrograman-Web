@@ -16,5 +16,5 @@ function cetakBilangan($n) {
 }
 
 // Contoh pemanggilan fungsi
-cetakBilangan(24);
+cetakBilangan(n: 24);
 ?>

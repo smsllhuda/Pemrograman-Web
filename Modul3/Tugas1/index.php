@@ -14,12 +14,12 @@ $controller = new BookController();
 
 try {
     // Create and display fiction book details
-    $fictionBook = $controller->createFictionBook("Before the coffee gets cold", "Toshikazu Kawaguchi");
-    echo $fictionBook->getDescription() . " - Genre: " . $fictionBook->getGenre() . PHP_EOL;
+    $fictionBook = $controller->createFictionBook("Before the coffee gets cold<br>", "Toshikazu Kawaguchi<br>");
+    echo $fictionBook->getDescription() . " - Genre:" . $fictionBook->getGenre() . PHP_EOL;
 
     // Create and display non-fiction book details
-    $nonFictionBook = $controller->createNonFictionBook("Sapiens", "Yuval Noah Harari");
-    echo $nonFictionBook->getDescription() . " - Genre: " . $nonFictionBook->getGenre() . PHP_EOL;
+    $nonFictionBook = $controller->createNonFictionBook("Sapiens<br>", "Yuval Noah Harari<br>");
+    echo $nonFictionBook->getDescription() . " - Genre:" . $nonFictionBook->getGenre() . PHP_EOL;
 } catch (Exception $e) {
     echo "Error: " . $e->getMessage();
 }
